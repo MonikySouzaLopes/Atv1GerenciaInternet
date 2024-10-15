@@ -27,7 +27,7 @@ tela.innerHTML = "";
 
 for(let i = 0; i < numero_moedas; ++i){
  let moeda = document.createElement("img");
- moeda.src = "coracao.png";
+ moeda.src = "./img/coracao.png";
  moeda.id = "j" + i;
  moeda.onclick = function(){
  pegaMoeda(this);
@@ -59,7 +59,7 @@ fetch('http://localhost:5050/score')
 
 function pegaMoeda(moeda){
  moeda
- moeda.src = "coracaoPartido.png";
+ moeda.src = "./img/coracaoPartido.png";
  ++pontos;
 let contadorPontos = document.getElementById("pontos");
 contadorPontos.innerText = pontos;
