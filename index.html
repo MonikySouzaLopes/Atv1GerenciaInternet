@@ -1,22 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <script src="script.js"></script>
- <title>Jogo - juntando Bitcoin</title>
- 
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo - Juntando Bitcoin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .titulo-emoji {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .emoji {
+            margin-right: 10px;
+            font-size: 40px; /* Tamanho do emoji */
+        }
+
+        .container1 {
+            margin-top: 20px;
+        }
+    </style>
+    <script src="script.js"></script>
 </head>
-
 <body onload="iniciaJogo()">
-  <script>
-    let receptor = prompt ("Qual seu nome ?");
- document.write( "Seja bem-vindo(a)!! " + receptor )
-  </script>
-<h1>Vamos quebrar hearts?</h1>
+    <script>
+        let receptor = prompt("Qual seu nome?");
+        document.write("Seja bem-vindo(a)!! " + receptor);
+    </script>
 
-<div id="tela"></div>
-<div> <strong>Pontos:</strong> <span id="pontos">0</span></div>
-<div><strong>tempo:</strong> <span id="tempo">10</span></div>
- <div id="container"></div>
+    <div class="titulo-emoji">
+        <img src="./img/positive-smile.png" alt="Emoji" class="emoji" width="40" height="40">
+        <h1>Vamos quebrar hearts?</h1>
+    </div>
+
+    <div id="tela"></div>
+    <div><strong>Pontos:</strong> <span id="pontos">0</span></div>
+    <div><strong>Tempo:</strong> <span id="tempo">10</span></div>
+    <div id="container"></div>
 </body>
 </html>
