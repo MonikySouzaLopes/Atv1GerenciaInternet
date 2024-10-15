@@ -59,7 +59,7 @@ fetch('http://localhost:5050/score')
 
 function pegaMoeda(moeda){
  moeda
- moeda.src = "coracao2.png";
+ moeda.src = "coracaoPartido.png";
  ++pontos;
 let contadorPontos = document.getElementById("pontos");
 contadorPontos.innerText = pontos;
